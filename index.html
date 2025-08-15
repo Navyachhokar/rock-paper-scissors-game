@@ -21,6 +21,9 @@
         // console.log("Computer choice:", getComputerChoice());
         function getHumanChoice() {
             const input =  prompt("Enter your choice");
+            if(input === null){
+                return "";
+            }
             return input.toLowerCase();
         }
         // console.log("Human choice:", getHumanChoice());
