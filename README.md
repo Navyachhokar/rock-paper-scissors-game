@@ -1,7 +1,7 @@
 # Rock Paper Scissors Game
 
 This is a Rock Paper Scissors game implemented in JavaScript, HTML, and CSS.
-It started as a browser-console project ([The Odin Project](https://www.theodinproject.com/) and was later upgraded with a basic web UI.
+It started as a browser-console project ([The Odin Project](https://www.theodinproject.com/)) and was later upgraded with a basic web UI.
 
 ## How to Play
 
@@ -22,19 +22,19 @@ It started as a browser-console project ([The Odin Project](https://www.theodinp
 
 Here’s how the game looks:
 
-![Game Screenshot](<img width="1629" height="815" alt="Screenshot (87)" src="https://github.com/user-attachments/assets/5fcaf656-db7d-44cb-856e-36ed68284d74" />)
-
+![Game Screenshot](https://github.com/user-attachments/assets/5fcaf656-db7d-44cb-856e-36ed68284d74)
 
 
 ## 🚀 Live Demo
-[Play the game here!]([https://navyachhokar.github.io/rock-paper-scissors-game/])
+[Play the game here!](https://navyachhokar.github.io/rock-paper-scissors-game/)
 
-## Usage
+
+## 🛠 Usage
 
 - Clone or download this repository.
 - Open `index.html` in your browser.
 - Play directly on the webpage—no console required.
 
-## Credits
+## 📌 Credits
 
 - Built as part of The Odin Project JavaScript Foundations course.
