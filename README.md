@@ -1,28 +1,40 @@
 # Rock Paper Scissors Game
 
-This is a simple Rock Paper Scissors game implemented in JavaScript, HTML, and the browser console.  
-It is a practice project based on [The Odin Project](https://www.theodinproject.com/) curriculum.
+This is a Rock Paper Scissors game implemented in JavaScript, HTML, and CSS.
+It started as a browser-console project ([The Odin Project](https://www.theodinproject.com/) and was later upgraded with a basic web UI.
 
 ## How to Play
 
 1. Open `index.html` in your web browser.
-2. The game will prompt you to enter your choice (`rock`, `paper`, or `scissors`) for 5 rounds.
-3. After each round, the scores are displayed in the console.
-4. At the end of 5 rounds, the final result (win, lose, or tie) is shown in the console.
+2. Click one of the buttons (✊ Rock, ✋ Paper, ✌ Scissors) to make your move.
+3. The computer will randomly select its move.
+4. The result of the round and the running score are displayed on the page.
+5. The game ends once either the player or the computer reaches 5 points.
 
 ## Features
 
-- Prompts the user for their choice each round.
-- Randomly selects the computer's choice.
-- Tracks and displays scores for both the human and computer.
-- Declares the overall winner after 5 rounds.
+- Interactive buttons for Rock, Paper, and Scissors.
+- Running score displayed after each round.
+- Announces the overall winner when either player reaches 5 points.
+- Basic UI styling for a cleaner look.
+
+## 🎮 Demo / Screenshots
+
+Here’s how the game looks:
+
+![Game Screenshot](<img width="1629" height="815" alt="Screenshot (87)" src="https://github.com/user-attachments/assets/5fcaf656-db7d-44cb-856e-36ed68284d74" />)
+
+
+
+## 🚀 Live Demo
+[Play the game here!]([https://navyachhokar.github.io/rock-paper-scissors-game/])
 
 ## Usage
 
 - Clone or download this repository.
 - Open `index.html` in your browser.
-- Open the browser console to view game output and results.
+- Play directly on the webpage—no console required.
 
 ## Credits
 
-- Built as part of The Odin Project JavaScript
+- Built as part of The Odin Project JavaScript Foundations course.
