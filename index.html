@@ -7,9 +7,24 @@
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
 
     <script>
+        const rockButton = document.getElementById('rock');
+        const paperButton = document.getElementById('paper');
+        const scissorsButton = document.getElementById('scissors');
 
+        rockButton.addEventListener('click', (e) => {
+            playRound('rock');
+        })
+        paperButton.addEventListener('click', (e) => {
+            playRound('paper');
+        })
+        scissorsButton.addEventListener('click', (e) => {
+            playRound('scissors');
+        })
         let humanScore = 0;
         let computerScore = 0; 
 
@@ -28,11 +43,9 @@
         }
         // console.log("Human choice:", getHumanChoice());
 
-        function playRound(){
-            const humanChoice = getHumanChoice();
-            // console.log("Human:",humanChoice);
+        function playRound(choice){
+            const humanChoice = choice;
             const computerChoice = getComputerChoice();
-            // console.log("computer:",computerChoice);
 
             if(humanChoice === computerChoice) {
                 console.log("It's a tie!");
@@ -76,10 +89,10 @@
             humanScore = 0;
             let finalHumanScore = 0;
             let finalComputerScore = 0;
-            for(let i = 0; i<5; i++){
-                playRound();
-                console.log(`Round ${i+1}: Computer Score: ${computerScore}, Human Score: ${humanScore}`);
-            }
+            // for(let i = 0; i<5; i++){
+            //     playRound();
+            //     console.log(`Round ${i+1}: Computer Score: ${computerScore}, Human Score: ${humanScore}`);
+            // }
             if (humanScore > computerScore) {
                 console.log("You Win!");
             } else if (humanScore < computerScore) {
