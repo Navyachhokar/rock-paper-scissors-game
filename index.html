@@ -4,12 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 10px;
+            border: 1px solid black;
+            background-color:rgb(80, 211, 255);
+        }
+        button:hover{
+            background-color: blue;
+            color:whitesmoke;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissors">Scissors</button>
+    <div class="buttons">
+        <button id="rock">Rock ✊</button>
+        <button id="paper">Paper ✋</button>
+        <button id="scissors">Scissors ✌️</button>
+    </div>
+    
     <div class="score"></div>
 
     <div class="result"></div>
@@ -20,11 +55,11 @@
         const scissorsButton = document.getElementById('scissors');
         const result = document.querySelector('.result');
         const score = document.querySelector('.score');
-
+        
         let humanScore = 0;
         let computerScore = 0;
         let gameOver = false; 
-
+        score.textContent = `Human score: ${humanScore}  |  Computer score: ${computerScore}`;
         rockButton.addEventListener('click', (e) => {
             playRound('rock');
         })
@@ -79,8 +114,7 @@
                     result.textContent = `You Win! ${humanChoice} Beats ${computerChoice}!`;           
                 }
             }    
-             score.textContent = `Human score: ${humanScore}  Computer score: ${computerScore}`;
-
+            score.textContent = `Human score: ${humanScore}  |  Computer score: ${computerScore}`;
              if (humanScore === 5 || computerScore === 5) {
                 gameOver = true;
                 if (humanScore === 5) {
